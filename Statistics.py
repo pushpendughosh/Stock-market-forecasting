@@ -31,10 +31,10 @@ class Statistics:
         maximums = np.maximum.accumulate(money)
         drawdowns = 1 - money/maximums
         return np.max(drawdowns)
-    def sharpe(self):
+    def sharpe(self,risk_free_rate = 0.0003):
         mu = self.mean()
         sig = self.std()
-        sharpe_d = (mu-0.0003)/sig
+        sharpe_d = (mu-risk_free_rate)/sig
         return (252**0.5)*sharpe_d 
     def shortreport(self):
         print('Mean \t\t',self.mean())
