@@ -8,7 +8,7 @@ from sklearn.preprocessing import RobustScaler
 from Statistics import Statistics
 
 import tensorflow as tf
-from tensorflow.keras.layers import LSTM, Dropout,Dense,Input 
+from tensorflow.keras.layers import CuDNNLSTM, Dropout,Dense,Input 
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, CSVLogger
 from tensorflow.keras.models import Model, Sequential, load_model
 from tensorflow.keras import optimizers
