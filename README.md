@@ -3,6 +3,12 @@
 
 We employ both random forests on the one hand and LSTM networks (more precisely CuDNNLSTM) on the other hand as training methodology to analyze their effectiveness in forecasting out-of-sample directional movements of constituent stocks of the S&amp;P 500 from January 1993 till December 2018.
 
+#### Requirements
+```
+pip install scikit-learn==0.20.4
+pip install tensorflow==1.14.0
+```
+
 ## Plots
 We plot three important metrics to quantify the effectiveness of our model: [Intraday-240,3-LSTM.py](Intraday-240%2C3-LSTM.py) and [Intraday-240,3-RF.py](Intraday-240%2C3-RF.py), in the period January 1993 till December 2018. <br>
 **Intraday LSTM**: [Intraday-240,3-LSTM.py](Intraday-240%2C3-LSTM.py) <br>
