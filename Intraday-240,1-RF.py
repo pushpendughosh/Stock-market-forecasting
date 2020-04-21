@@ -139,4 +139,3 @@ for test_year in range(1993,2020):
         res += '-'*30 + '\n'
         myfile.write(res)
             
-
