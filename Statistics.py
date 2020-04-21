@@ -56,3 +56,4 @@ class Statistics:
         print('CVaR_5 \t\t',self.CVaR(5))
         print('MDD \t\t',self.MDD())
         print(self.percentiles())
+        
