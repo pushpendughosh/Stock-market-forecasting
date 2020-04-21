@@ -23,7 +23,7 @@ constituents = {'-'.join(col.split('/')[::-1]):set(SP500_df[col].dropna())
 constituents_train = {} 
 for test_year in range(1993,2016):
     months = [str(t)+'-0'+str(m) if m<10 else str(t)+'-'+str(m) 
-              for t in range(test_year-3,test_year) for m ßin range(1,13)]
+              for t in range(test_year-3,test_year) for m in range(1,13)]
     constituents_train[test_year] = [list(constituents[m]) for m in months]
     constituents_train[test_year] = set([i for sublist in constituents_train[test_year] for i in sublist])
  
@@ -85,7 +85,6 @@ def create_stock_data(df,st):
     st_test_data = st_data[trade_year==str(test_year)]
     return np.array(st_train_data),np.array(st_test_data)
 
-model_folder = 'models4'
 result_folder = 'results4'
 
 for test_year in range(1993,2020):
@@ -129,4 +128,3 @@ for test_year in range(1993,2020):
         res += 'Sharpe = '+str(result.sharpe()) + '\n'
         res += '-'*30 + '\n'
         myfile.write(res)
-   
