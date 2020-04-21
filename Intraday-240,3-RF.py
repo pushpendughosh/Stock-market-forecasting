@@ -27,7 +27,7 @@ for test_year in range(1993,2016):
     constituents_train[test_year] = set([i for sublist in constituents_train[test_year] 
                                          for i in sublist])
     
-def trainer(train_data,test_data):ß
+def trainer(train_data,test_data):
     random.seed(SEED)
     np.random.seed(SEED)
     
@@ -35,7 +35,10 @@ def trainer(train_data,test_data):ß
     train_y = train_y.astype('int')
 
     print('Started training')
-    clf = RandomForestClassifier(n_estimators=1000, max_depth=10, random_state = SEED, n_jobs=-1)
+    clf = RandomForestClassifier(n_estimators=1000, 
+        max_depth=10, 
+        random_state = SEED, 
+        n_jobs=32)
     clf.fit(train_x,train_y)
     print('Completed ',clf.score(train_x,train_y))
 
@@ -140,4 +143,3 @@ for test_year in range(1993,2020):
         res += '-'*30 + '\n'
         myfile.write(res)
         
-
