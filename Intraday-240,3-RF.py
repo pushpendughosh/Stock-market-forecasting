@@ -38,7 +38,7 @@ def trainer(train_data,test_data):
     clf = RandomForestClassifier(n_estimators=1000, 
         max_depth=10, 
         random_state = SEED, 
-        n_jobs=32)
+        n_jobs=-1)
     clf.fit(train_x,train_y)
     print('Completed ',clf.score(train_x,train_y))
 
