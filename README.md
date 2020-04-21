@@ -18,23 +18,23 @@ We plot three important metrics to quantify the effectiveness of our model: [Int
 
 #### Cumulative Money growth (after transaction cost)
 <div>
-<img src="result-images/money1.jpg" width="32.5%">
-<img src="result-images/money2.jpg" width="32.5%">
-<img src="result-images/money3.jpg" width="32.5%">
+<img src="https://github.com/pushpendughosh/Stock-market-forecasting/tree/master/result-images/money1.jpg" width="32.5%">
+<img src="https://github.com/pushpendughosh/Stock-market-forecasting/tree/master/result-images/money2.jpg" width="32.5%">
+<img src="https://github.com/pushpendughosh/Stock-market-forecasting/tree/master/result-images/money3.jpg" width="32.5%">
 </div>
 
 #### Average daily returns (after transaction cost)
 <div>
-<img src="result-images/barRet1.jpg" width="32.5%">
-<img src="result-images/barRet2.jpg" width="32.5%">
-<img src="result-images/barRet3.jpg" width="32.5%">
+<img src="https://github.com/pushpendughosh/Stock-market-forecasting/tree/master/result-images/barRet1.jpg" width="32.5%">
+<img src="https://github.com/pushpendughosh/Stock-market-forecasting/tree/master/result-images/barRet2.jpg" width="32.5%">
+<img src="https://github.com/pushpendughosh/Stock-market-forecasting/tree/master/result-images/barRet3.jpg" width="32.5%">
 </div>
 
 #### Average (Annualized) Sharpe ratio (after transaction cost)
 <div>
-<img src="result-images/barSharpe1.jpg" width="32.5%">
-<img src="result-images/barSharpe2.jpg" width="32.5%">
-<img src="result-images/barSharpe3.jpg" width="32.5%">
+<img src="https://github.com/pushpendughosh/Stock-market-forecasting/tree/master/result-images/barSharpe1.jpg" width="32.5%">
+<img src="https://github.com/pushpendughosh/Stock-market-forecasting/tree/master/result-images/barSharpe2.jpg" width="32.5%">
+<img src="https://github.com/pushpendughosh/Stock-market-forecasting/tree/master/result-images/barSharpe3.jpg" width="32.5%">
 </div>
 
 ## Acknowledgements
