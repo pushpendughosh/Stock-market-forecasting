@@ -1,4 +1,4 @@
-# Forecasting directional movements of stock-prices for intraday trading using LSTM and random-forest
+# [Forecasting directional movements of stock-prices for intraday trading using LSTM and random-forest](https://arxiv.org/abs/2004.10178)
 
 **https://arxiv.org/abs/2004.10178** <br>
 **Pushpendu Ghosh, Ariel Neufeld, Jajati K Sahoo**
