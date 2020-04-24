@@ -195,6 +195,7 @@ for test_year in range(1993,2020):
     returns.to_csv(result_folder+'/avg_daily_rets-'+str(test_year)+'.csv')
     
     result = Statistics(returns.sum(axis=1))
+    print('\nAverage returns prior to transaction charges')
     result.shortreport() 
     
     with open(result_folder+"/avg_returns.txt", "a") as myfile:
