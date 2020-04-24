@@ -115,6 +115,7 @@ for test_year in range(1993,2020):
     predictions = trainer(train_data,test_data)
     returns = simulate(test_data,predictions)
     result = Statistics(returns.sum(axis=1))
+    print('\nAverage returns prior to transaction charges')
     result.shortreport() 
     
     with open(result_folder+'/predictions-'+str(test_year)+'.pickle', 'wb') as handle:
