@@ -160,6 +160,9 @@ def Normalize(train_data,test_data,norm_type='StandardScalar'):
 
 model_folder = 'models3'
 result_folder = 'results3'
+for directory in [model_folder,result_folder]:
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
 model_type = 'LSTM'
 norm_type = 'StandardScalar'
