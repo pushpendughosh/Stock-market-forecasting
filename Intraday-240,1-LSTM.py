@@ -158,6 +158,9 @@ def scalar_normalize(train_data,test_data):
 
 model_folder = 'models5'
 result_folder = 'results5'
+for directory in [model_folder,result_folder]:
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
 for test_year in range(1993,2020):
     
