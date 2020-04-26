@@ -86,6 +86,9 @@ def create_stock_data(df,st):
     return np.array(st_train_data),np.array(st_test_data)
 
 result_folder = 'results4'
+for directory in [result_folder]:
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
 for test_year in range(1993,2020):
     
