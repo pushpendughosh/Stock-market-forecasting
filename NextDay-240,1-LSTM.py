@@ -6,7 +6,7 @@ import pickle
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler,RobustScaler
 from Statistics import Statistics
-ß
+
 import tensorflow as tf
 from tensorflow.keras.layers import CuDNNLSTM,LSTM,Dropout,Dense,Input 
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, CSVLogger 
