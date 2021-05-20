@@ -43,7 +43,7 @@ We plot three important metrics to quantify the effectiveness of our model: [Int
 
 #### Feature Importance
 <div>
-<img src="result-images/feature_importance.jpg" width="49%">
+<img src="result-images/feature_importance_2.jpg" width="49%">
 <img src="result-images/feature_importance_result.jpg" width="49%">
 </div>
       This figure demonstrates the Sharpe ratio achieved when single features are used instead of 3-features for the same intraday trading strategy. It also tells which feature is important. <br>
