@@ -41,7 +41,7 @@ We plot three important metrics to quantify the effectiveness of our model: [Int
 
 ## Appendix
 
-### Feature Importance
+#### Feature Importance
 <div>
 <img src="result-images/feature_importance.jpg" width="49%">
 <img src="result-images/feature_importance_result.jpg" width="49%">
@@ -49,13 +49,13 @@ We plot three important metrics to quantify the effectiveness of our model: [Int
       This figure demonstrates the Sharpe ratio achieved when single features are used instead of 3-features for the same intraday trading strategy. It also tells which feature is important. <br>
       Result suggest <em><b>or</b></em> (returns from close price to next day open price) has the highest importance. This is justifiable by the fact it is the only feature which considers the latest available data (the trading day's open price) at the time of making the trading decision.
 
-### LSTM hyperparameter tuning
+#### LSTM hyperparameter tuning
 <div>
 <img src="result-images/hyper_param_tuning_LSTM.jpg" width="49%">
 <img src="result-images/HP_cell_LSTM_result.jpg" width="49%">
 </div>
 
-### Benchmark against other LSTM architectures
+#### Benchmark against other LSTM architectures
 <div>
 <img src="result-images/other_LSTM_models.jpg" width="49%">
 <img src="result-images/other_LSTM_results.jpg" width="49%">
