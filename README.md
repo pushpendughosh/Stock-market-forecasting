@@ -54,7 +54,7 @@ We plot three important metrics to quantify the effectiveness of our model: [Int
 <img src="result-images/hyper_param_tuning_LSTM.jpg" width="49%">
 <img src="result-images/HP_cell_LSTM_result.jpg" width="49%">
 </div>
-We see that 25 cells for our chosen LSTM architecture to be at least as good as other amounts between 5 and 100. We have chosen 25 cells also for the ease of comparison with Fischer & Krauss (2018)
+We see that the amount of 25 cells for our chosen LSTM architecture to be at least as good as other amounts between 5 and 100. We have chosen 25 cells also for the ease of comparison with Fischer & Krauss (2018)
 
 #### Benchmark against other LSTM architectures
 <div>
