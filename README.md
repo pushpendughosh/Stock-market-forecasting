@@ -46,14 +46,15 @@ We plot three important metrics to quantify the effectiveness of our model: [Int
 <img src="result-images/feature_importance_2.jpg" width="49%">
 <img src="result-images/feature_importance_result.jpg" width="49%">
 </div>
-      This figure demonstrates the Sharpe ratio achieved when single features are used instead of 3-features for the same intraday trading strategy. It also tells which feature is important. <br>
-      Result suggest <em><b>or</b></em> (returns from close price to next day open price) has the highest importance. This is justifiable by the fact it is the only feature which considers the latest available data (the trading day's open price) at the time of making the trading decision.
+      This figure analyzes the Sharpe Ratio achieved when single features are used instead of our 3-features for the same intraday trading strategy. It hence analyzes which single feature is important. <br>
+      The result suggest that <em><b>or</b></em> (returns from close price to next day open price) has the highest importance. This is justifiable by the fact that it is the only feature which considers the latest available data (the trading day's open price) at the time of making the trading decision. We also see that our 3-features setting achieves the highest Sharpe Ratio and hence outperforms each single feature.
 
 #### LSTM hyperparameter tuning
 <div>
 <img src="result-images/hyper_param_tuning_LSTM.jpg" width="49%">
 <img src="result-images/HP_cell_LSTM_result.jpg" width="49%">
 </div>
+We see that 25 cells for our chosen LSTM architecture to be at least as good as other amounts between 5 and 100. We have chosen 25 cells also for the ease of comparison with Fischer & Krauss (2018)
 
 #### Benchmark against other LSTM architectures
 <div>
@@ -61,8 +62,7 @@ We plot three important metrics to quantify the effectiveness of our model: [Int
 <img src="result-images/other_LSTM_results.jpg" width="49%">
 </div>
 
-We consider various new LSTM architectures but find that they are bulky and also not much effective in generating high results. GRU is a relatively simpler variation of LSTM, and generates reasonably good but slightly lesser returns than LSTM. <br>
-In our experiments, we find the LSTM with 25 cells to be optimal in generating high results with agreeably less number of training variables.
+We consider various new LSTM architectures. Note that the other LSTM architectures involve much more parameters than the one we chose for our empirical study and do not achieve better results in terms of Sharpe Ratio. Moreover,  we also compare our LSTM architecture with GRU, which is a relatively simpler variation of LSTM, and see that it generates reasonably good but still slightly lower Sharpe ratio than our chosen  LSTM architecture.
 
 References to the LSTM models:
 1. Single Layer GRU: https://arxiv.org/abs/1412.3555
@@ -72,7 +72,7 @@ References to the LSTM models:
 
 ## Acknowledgements
 The first author gratefully acknowledges the NTU-India Connect Research Internship Programme which allowed him to carry out part of this research project while visiting the Nanyang Technological University, Singapore.<br>
-The second author gratefully acknowledges financial support by the NAP Grant.
+The second author gratefully acknowledges financial support by his Nanyang Assistant Professorship Grant (NAP Grant) <em>Machine Learning based Algorithms in Finance and Insurance</em>.
 
 ## References
 [1] [Fischer, Thomas, and Christopher Krauss. "Deep learning with long short-term memory networks for financial market predictions." European Journal of Operational Research 270.2 (2018): 654-669.](https://www.econstor.eu/bitstream/10419/157808/1/886576210.pdf) <br>
