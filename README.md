@@ -58,7 +58,7 @@ We see that 25 cells for our chosen LSTM architecture to be at least as good as 
 
 #### Benchmark against other LSTM architectures
 <div>
-<img src="result-images/other_LSTM_models.jpg" width="49%">
+<img src="result-images/other_LSTM_models_2.jpg" width="49%">
 <img src="result-images/other_LSTM_results.jpg" width="49%">
 </div>
 
