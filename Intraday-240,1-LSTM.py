@@ -156,8 +156,8 @@ def scalar_normalize(train_data,test_data):
     test_data[:,2:-2] = scaler.transform(test_data[:,2:-2])
     
 
-model_folder = 'models5'
-result_folder = 'results5'
+model_folder = 'models-Intraday-240-1-LSTM'
+result_folder = 'results-Intraday-240-1-LSTM'
 for directory in [model_folder,result_folder]:
     if not os.path.exists(directory):
         os.makedirs(directory)
