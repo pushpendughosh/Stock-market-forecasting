@@ -73,7 +73,7 @@ def trainer(train_data,test_data):
     train_ret = np.hstack((np.zeros((len(train_data),1)),train_ret)) 
 
     model = makeLSTM()
-    callbacks = callbacks_req(model_type)
+    callbacks = callbacks_req()
     
     model.fit(train_x,
               enc_y,
@@ -160,8 +160,8 @@ def scalar_normalize(train_data,test_data):
     train_data[:,2:-2] = scaler.transform(train_data[:,2:-2])
     test_data[:,2:-2] = scaler.transform(test_data[:,2:-2])    
     
-model_folder = 'models1'
-result_folder = 'results1'
+model_folder = 'models-Intraday-240-3-LSTM'
+result_folder = 'results-Intraday-240-3-LSTM'
 for directory in [model_folder,result_folder]:
     if not os.path.exists(directory):
         os.makedirs(directory)
