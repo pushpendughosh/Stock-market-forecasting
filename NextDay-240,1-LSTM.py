@@ -67,7 +67,7 @@ def callbacks_req(model_type='LSTM'):
     earlyStopping = EarlyStopping(monitor='val_loss',mode='min',patience=10,restore_best_weights=True)
     return [csv_logger,earlyStopping,model_checkpoint]
 
-def trainer(train_data,test_data,model_type='LSTM'):
+def trainer(train_data,test_data,model_type='CuDNNLSTM'):
     
     np.random.shuffle(train_data)
     train_x,train_y = train_data[:,2:-2],train_data[:,-1]
@@ -158,8 +158,8 @@ def Normalize(train_data,test_data,norm_type='StandardScalar'):
     train_data[:,2:-2] = scaler.transform(train_data[:,2:-2])
     test_data[:,2:-2] = scaler.transform(test_data[:,2:-2])
 
-model_folder = 'models3'
-result_folder = 'results3'
+model_folder = 'models-NextDay-240-1-LSTM'
+result_folder = 'results-NextDay-240-1-LSTM'
 for directory in [model_folder,result_folder]:
     if not os.path.exists(directory):
         os.makedirs(directory)
