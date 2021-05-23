@@ -164,7 +164,7 @@ for directory in [model_folder,result_folder]:
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-model_type = 'LSTM'
+model_type = 'CuDNNLSTM'
 norm_type = 'StandardScalar'
 
 for test_year in range(1993,2020):
