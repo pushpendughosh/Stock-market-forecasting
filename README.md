@@ -5,6 +5,18 @@
 
 We design a highly profitable trading stratergy and employ random forests and LSTM networks (more precisely CuDNNLSTM) to analyze their effectiveness in forecasting out-of-sample directional movements of constituent stocks of the S&amp;P 500, for intraday trading, from January 1993 till December 2018. 
 
+#### Bibtex
+```
+@article{ghosh2021forecasting,
+  title={Forecasting directional movements of stock prices for intraday trading using LSTM and random forests},
+  author={Ghosh, Pushpendu and Neufeld, Ariel and Sahoo, Jajati Keshari},
+  journal={Finance Research Letters},
+  pages={102280},
+  year={2021},
+  publisher={Elsevier}
+}
+```
+
 #### Requirements
 ```
 pip install scikit-learn==0.20.4
